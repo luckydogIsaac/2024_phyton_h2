@@ -1,0 +1,156 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNDZDl13HkteAcqdrYKI6wg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luckydogIsaac/2024_phyton_h2/blob/main/hw2-1%2C2%2C3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DnqPPZ3HPui_",
+        "outputId": "da448ebd-2050-441f-fa08-f94c4d63c361"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入圓的半徑: -1\n",
+            "半徑不能是負數，請輸入一個非負的半徑。\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "r = float(input(\"請輸入圓的半徑: \"))\n",
+        "if r >= 0:\n",
+        "    area = r * r * 3.14\n",
+        "    circumference = r * 2 * 3.14\n",
+        "    print(f\"圓的面積是: {area}\")\n",
+        "    print(f\"圓的周長是: {circumference}\")\n",
+        "else:\n",
+        "    print(\"半徑不能是負數，請輸入一個非負的半徑。\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "OBvCp4SnWSce"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = int(input(\"Enter your first number:\"))\n",
+        "\n",
+        "y = int(input(\"Enter your second number:\"))\n",
+        "z = int(input(\"please plus your first and second number:\"))\n",
+        "if x + y == z:\n",
+        "  print(\"right\")\n",
+        "else:\n",
+        "  print(\"Error\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I6QXMG4EWJdg",
+        "outputId": "19fbe23a-0399-4b68-ff1d-1fd70224407b"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your first number:2\n",
+            "Enter your second number:2\n",
+            "please plus your first and second number:4\n",
+            "right\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "positive_count = 0\n",
+        "negative_count = 0\n",
+        "zero_count = 0\n",
+        "\n",
+        "\n",
+        "print(\"請輸入10個整數：\")\n",
+        "for i in range(10):\n",
+        "    num = int(input(f\"輸入第 {i+1} 個數字: \"))\n",
+        "    if num > 0:\n",
+        "        positive_count += 1\n",
+        "    elif num < 0:\n",
+        "        negative_count += 1\n",
+        "    else:\n",
+        "        zero_count += 1\n",
+        "\n",
+        "\n",
+        "print(f\"正數的個數: {positive_count}\")\n",
+        "print(f\"負數的個數: {negative_count}\")\n",
+        "print(f\"零的個數: {zero_count}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LAxJPOsCerOx",
+        "outputId": "198f34c9-c7f4-4732-cb79-b24dcbe1fb61"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入10個整數：\n",
+            "輸入第 1 個數字: 8\n",
+            "輸入第 2 個數字: 0\n",
+            "輸入第 3 個數字: -5\n",
+            "輸入第 4 個數字: 4\n",
+            "輸入第 5 個數字: 4\n",
+            "輸入第 6 個數字: 3\n",
+            "輸入第 7 個數字: -7\n",
+            "輸入第 8 個數字: -4\n",
+            "輸入第 9 個數字: -3\n",
+            "輸入第 10 個數字: 0\n",
+            "正數的個數: 4\n",
+            "負數的個數: 4\n",
+            "零的個數: 2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
