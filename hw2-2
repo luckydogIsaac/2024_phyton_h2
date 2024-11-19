@@ -1,0 +1,8 @@
+x = int(input("Enter your first number:"))
+
+y = int(input("Enter your second number:"))
+z = int(input("please plus your first and second number:"))
+if x + y == z:
+  print("right")
+else:
+  print("Error")
